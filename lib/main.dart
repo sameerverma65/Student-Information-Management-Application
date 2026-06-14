@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 List user_data = [];
+String url = "https://10.0.2.2/";
 void main() {
   runApp(MainApp());
 }
@@ -46,7 +47,7 @@ class _HomeAppState extends State<HomeApp> {
   }
 
   Future<void> addEntry() async {
-    String uri = "http://10.0.2.2/register_student.php";
+    String uri = "${url}register_student.php";
 
     setState(() {
       name_error = name.text.isEmpty;
@@ -139,7 +140,7 @@ class _HomeAppState extends State<HomeApp> {
         status = "Getting Details...";
       });
       openAlertDialog();
-      String uri = "http://10.0.2.2/retrieve_data.php";
+      String uri = "${url}retrieve_data.php";
 
       var res = await http.get(Uri.parse(uri));
       setState(() {

@@ -51,7 +51,7 @@ Follow these steps to configure your local server environment and execute the ap
 1. Open the Flutter project folder inside your preferred code editor (VS Code / Android Studio).
 2. Note that the application uses the loopback IP `10.0.2.2` within `main.dart` to communicate directly with your computer's localhost endpoints from within an Android Emulator environment.
 3. For the application to be run on a web-based emulator, change the URL to `http://localhost/`, 
-   for running on an emulator, change the URL to `http://10.0.2.2/`, and for running on a mobile device through USB or wireless debugging, change the URL to `http://{local ip address of laptop or PC}` and make sure both the devices are connected to the same wifi network.
+   for running on an emulator, change the URL to `http://10.0.2.2/`, and for running on a mobile device through USB or wireless debugging, change the URL to `http://{local ip address of laptop or PC}/` and make sure both the devices are connected to the same wifi network.
 4. Open a terminal inside the project directory and pull down all necessary application dependencies:
 ```bash
    flutter pub get
